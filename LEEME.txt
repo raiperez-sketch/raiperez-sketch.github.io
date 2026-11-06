@@ -1,0 +1,22 @@
+ACME — SOLO BARRA DE NAVEGACIÓN
+Incluye únicamente el encabezado blanco, el logo original, Inicio, Nosotros,
+Resolver (Servicios, Ver objetos y Solicitar devolución), Video y guía,
+el botón hamburguesa, su CSS responsive y JavaScript comentado.
+
+Abre index.html. Reduce el ancho a 600 px o menos para ver la hamburguesa.
+Resolver abre el submenú vertical. Escape cierra la navegación móvil.
+
+El header usa position: sticky; top: 0 para acompañar al usuario al desplazarse.
+Integra el header como hijo directo de body, fuera de contenedores cortos.
+Esta versión no incluye contenido: sin contenido no habrá desplazamiento.
+Al incorporarlo a la landing completa, el encabezado permanecerá visible.
+
+Los enlaces conservan los destinos del proyecto original: secciones inicio,
+nosotros, servicios, orientador y contacto, y la página recursos.html.
+Esos contenidos no se incluyen porque se solicitó únicamente el menú.
+Conserva sus IDs al integrar el menú. Para mover el foco a una sección con JS,
+puedes añadir tabindex="-1" a esa sección.
+
+HTML: estructura y referencias del DOM.
+CSS: menú horizontal, submenú vertical, hamburguesa y media query.
+JS: clic, Escape, cambios de tamaño, atributos y cierre del submenú.

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRuta - Movilidad Urbana Accesible</title>
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="he_pie.css">
+  <!-- Script del menú responsive -->
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+
+  <!-- Cabecera y Menú de Navegación -->
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <div class="logo">
+        <span class="icono-logo" aria-hidden="true">♿</span> EcoRuta
+      </div>
+      
+      <button id="boton-menu" class="hamburguesa" type="button"
+              aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú">
+        <span class="lineas" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span id="texto-menu">Menú</span>
+      </button>
+
+      <nav id="navegacion" class="navegacion" aria-label="Menú principal">
+        <ul class="menu menu-horizontal">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca">Acerca</a></li>
+          <li class="item-con-submenu">
+            <details id="resolver" class="desplegable">
+              <summary>Servicios</summary>
+              <ul class="submenu submenu-vertical">
+                <li><a href="#auditorias">Auditorías Urbanas</a></li>
+                <li><a href="#mapas">Mapeo Accesible</a></li>
+                <li><a href="#talleres">Talleres y Asesorías</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección Principal / Hero -->
+    <section id="inicio" class="seccion hero">
+      <div class="hero-contenido">
+        <h1>Ciudades sin barreras para todos</h1>
+        <p>Transformamos los entornos urbanos priorizando la movilidad peatonal inclusiva y universal.</p>
+        <a href="#galeria" class="boton-cta">Explorar Galería</a>
+      </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="seccion seccion-galeria">
+      <div class="encabezado-seccion">
+        <h2>Galería de Intervenciones Urbanas</h2>
+        <p>Registro de adecuaciones, rampas, señalética táctil y corredores peatonales accesibles.</p>
+      </div>
+
+      <div class="galeria-rejilla">
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er1/400/300" alt="Rampa peatonal con pendiente reglamentaria en esquina comercial" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Rampa Esquina Central</h3>
+            <p>Adecuación de gradiente al 8% con vados laterales accesibles.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er2/400/300" alt="Franja de pavimento podotáctil direccional en acera" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Pavimento Podotáctil</h3>
+            <p>Líneas de avance para personas con baja o nula visión.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er3/400/300" alt="Paso peatonal continuo a nivel de calzada con cruce seguro" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Cruce a Nivel</h3>
+            <p>Elevación continua de acera priorizando el tránsito a pie.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er4/400/300" alt="Semáforo acústico accesible con botón pulsador" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Semáforo Acústico</h3>
+            <p>Emisores sonoros sincronizados para cruces con alto tráfico.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 5 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er5/400/300" alt="Vereda ensanchada libre de postes y obstáculos de cableado" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Acera Despejada</h3>
+            <p>Franja libre de obstáculos de mínimo 1.80 metros.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 6 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er6/400/300" alt="Bancas de descanso ergonómicas con descansabrazos en parque" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Banca Ergonómica</h3>
+            <p>Mobiliario accesible para personas mayores o movilidad reducida.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 7 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er7/400/300" alt="Alcorque cubierto con rejilla metálica enrasada con el suelo" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Alcorque Nivelado</h3>
+            <p>Protección metálica que evita desniveles y tropiezos en la vereda.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 8 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er8/400/300" alt="Señalética vial con texto de alto contraste y sistema Braille" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Señalética Braille</h3>
+            <p>Tótems de orientación con macrocaracteres y relieve.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 9 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er9/400/300" alt="Rampa de acceso público con doble pasamanos cilíndrico" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Pasamanos Continuo</h3>
+            <p>Doble altura de soporte a 70 cm y 90 cm del suelo.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 10 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er10/400/300" alt="Parada de transporte público con plataforma a piso bajo" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Paradero Integrado</h3>
+            <p>Embarque nivelado con el autobús para usuarios en silla de ruedas.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 11 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er11/400/300" alt="Zona de juegos infantiles con accesos inclusivos para todos" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Parque Infantil Accesible</h3>
+            <p>Pisos amortiguantes de caucho y juegos adaptados.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 12 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er12/400/300" alt="Plaza urbana con pavimento de textura táctil de advertencia" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Botones de Alerta</h3>
+            <p>Baldosas con domos para advertir cruces y cambios de nivel.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 13 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er13/400/300" alt="Iluminación peatonal baja orientada directamente a la banqueta" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Luz Focal Peatonal</h3>
+            <p>Luminarias que eliminan sombras peligrosas en los senderos.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 14 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er14/400/300" alt="Estacionamiento reservado para personas con movilidad reducida" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Cajón Preferencial</h3>
+            <p>Espacio vehicular de 3.80 m con franja segura de transferencia.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 15 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er15/400/300" alt="Corredor verde pacificado con coexistencia peatonal" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Calle Pacífica</h3>
+            <p>Zona residencial de velocidad máxima 20 km/h y preferencia peatonal.</p>
+          </div>
+        </article>
+
+        <!-- Tarjeta 16 -->
+        <article class="tarjeta-galeria">
+          <div class="contenedor-img">
+            <img src="https://picsum.photos/seed/er16/400/300" alt="Plano háptico táctil con relieve para orientación urbana" loading="lazy">
+          </div>
+          <div class="info-tarjeta">
+            <h3>Plano Háptico</h3>
+            <p>Maqueta táctil con relieve topográfico ubicada en estaciones centrales.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página corregido (mantiene la misma estructura original con íconos que no se rompen) -->
+  <footer id="contacto" class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo" aria-hidden="true">♿</span>
+        <p class="brand-nombre">EcoRuta</p>
+        <small>© 2025 Todos los derechos reservados</small>
+      </div>
+
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="documentos/politica_aip.pdf">Política de Privacidad</a>
+        <a href="https://www.godaddy.com/resources/es/recursos/como-definir-los-terminos-y-condiciones-y-la-politica-de-privacidad-de-tu-tienda-online" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a>
+        <a href="documentos/LEY29733.pdf">Protección de Datos</a>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7v-3h3V9.5C10 6.57 11.76 5 14.42 5c1.27 0 2.6.23 2.6.23v2.85h-1.46c-1.45 0-1.9.9-1.9 1.83V12h3.2l-.51 3h-2.69v6.8c4.56-.93 8-4.96 8-9.8z"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" aria-label="LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+            </svg>
+          </a>
+          <!-- Twitter / X -->
+          <a href="#" aria-label="Twitter">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
