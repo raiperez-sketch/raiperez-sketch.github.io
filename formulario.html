@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud Recibida | EcoRuta Senior</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="he_pie.css">
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="cabecera">
+    <div class="contenedor barra">
+      <a class="logo" href="index.html">
+        <span class="icono-logo" aria-hidden="true">👵🦯</span> EcoRuta Senior
+      </a>
+      
+      <button id="boton-menu" class="hamburguesa" type="button"
+              aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú">
+        <span class="lineas" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span id="texto-menu">Menú</span>
+      </button>
+
+      <nav id="navegacion" class="navegacion" aria-label="Menú principal">
+        <ul class="menu menu-horizontal">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#nosotros">Propuesta</a></li>
+          <li class="item-con-submenu">
+            <details id="resolver" class="desplegable">
+              <summary>Explorar</summary>
+              <ul class="submenu submenu-vertical">
+                <li><a href="index.html#pasos">Cómo funciona</a></li>
+                <li><a href="index.html#orientador">Buscador de Rutas</a></li>
+                <li><a href="index.html#galeria">Galería Urbana</a></li>
+                <li><a href="index.html#reportar">Solicitar Mejora</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="recursos.html">Video y Guía</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor seccion">
+    <section class="confirmacion" aria-labelledby="confirmado">
+      <p class="etiqueta">Fin de la simulación</p>
+      <h1 id="confirmado">El siguiente paso sería visitar la cuadra.</h1>
+      <p>Así concluiría el registro de un reporte vecinal en EcoRuta Senior. En un caso real, el equipo de accesibilidad verificaría el estado de la vereda o esquina para coordinar su adecuación con el municipio.</p>
+      <p>Este es un mensaje fijo demostrativo: no se han guardado tus datos ni se ha generado un expediente real.</p>
+      
+      <h2>¿Deseas explorar otra ruta o volver al inicio?</h2>
+      <p>Puedes consultar otras recomendaciones de movilidad para tus abuelos o regresar al formulario.</p>
+      <div class="acciones-hero">
+        <a class="boton-cta boton-oscuro" href="index.html#orientador">Probar otra ruta</a>
+        <a class="enlace-secundario" href="index.html#reportar">Volver al formulario</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo" aria-hidden="true">👵🦯</span>
+        <p class="brand-nombre">EcoRuta Senior</p>
+        <small>© 2026 Ciudades amables con las personas mayores</small>
+      </div>
+      <div class="footer-links">
+        <h4>Información y Legal</h4>
+        <a href="recursos.html">Guía de Cuidado Peatonal</a>
+        <a href="documentos/politica_aip.pdf">Política de Privacidad</a>
+        <a href="documentos/LEY29733.pdf">Protección de Datos (Ley 29733)</a>
+      </div>
+      <div class="footer-social">
+        <h4>Comunidad</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7v-3h3V9.5C10 6.57 11.76 5 14.42 5c1.27 0 2.6.23 2.6.23v2.85h-1.46c-1.45 0-1.9.9-1.9 1.83V12h3.2l-.51 3h-2.69v6.8c4.56-.93 8-4.96 8-9.8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
