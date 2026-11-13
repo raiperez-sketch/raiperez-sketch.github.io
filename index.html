@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoRuta - Movilidad Urbana Accesible</title>
+  <title>EcoRuta Senior | Caminatas Seguras para Nuestros Abuelos</title>
   <!-- Hojas de estilo -->
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="he_pie.css">
@@ -12,12 +12,14 @@
 </head>
 <body>
 
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
   <!-- Cabecera y Menú de Navegación -->
   <header class="cabecera">
     <div class="contenedor barra">
-      <div class="logo">
-        <span class="icono-logo" aria-hidden="true">♿</span> EcoRuta
-      </div>
+      <a class="logo" href="index.html">
+        <span class="icono-logo" aria-hidden="true">👵🦯</span> EcoRuta Senior
+      </a>
       
       <button id="boton-menu" class="hamburguesa" type="button"
               aria-controls="navegacion" aria-expanded="false" aria-label="Abrir menú">
@@ -27,269 +29,314 @@
 
       <nav id="navegacion" class="navegacion" aria-label="Menú principal">
         <ul class="menu menu-horizontal">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#acerca">Acerca</a></li>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#nosotros">Propuesta</a></li>
           <li class="item-con-submenu">
             <details id="resolver" class="desplegable">
-              <summary>Servicios</summary>
+              <summary>Explorar</summary>
               <ul class="submenu submenu-vertical">
-                <li><a href="#auditorias">Auditorías Urbanas</a></li>
-                <li><a href="#mapas">Mapeo Accesible</a></li>
-                <li><a href="#talleres">Talleres y Asesorías</a></li>
+                <li><a href="index.html#pasos">Cómo funciona</a></li>
+                <li><a href="index.html#orientador">Buscador de Rutas</a></li>
+                <li><a href="index.html#galeria">Galería Urbana</a></li>
+                <li><a href="index.html#reportar">Solicitar Mejora</a></li>
               </ul>
             </details>
           </li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="extra.html">Video y Guía</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Sección Principal / Hero -->
-    <section id="inicio" class="seccion hero">
+  <main id="contenido">
+    <!-- Sección Principal / Hero en dos columnas -->
+    <section id="inicio" class="hero contenedor dos-columnas" aria-labelledby="titulo">
       <div class="hero-contenido">
-        <h1>Ciudades sin barreras para todos</h1>
-        <p>Transformamos los entornos urbanos priorizando la movilidad peatonal inclusiva y universal.</p>
-        <a href="#galeria" class="boton-cta">Explorar Galería</a>
+        <p class="etiqueta">Movilidad urbana para la tercera edad</p>
+        <h1 id="titulo">Veredas amables para pasos con historia.</h1>
+        <p>Un escalón muy alto o una vereda rota no deberían dejar a nuestros abuelitos en casa. En EcoRuta Senior mapeamos recorridos seguros, bancas de descanso y cruces tranquilos para que salgan con confianza.</p>
+        <div class="acciones-hero">
+          <a href="#orientador" class="boton-cta">Consultar ruta segura</a>
+          <a href="recursos.html" class="enlace-secundario">Ver guía familiar</a>
+        </div>
+        <p class="nota">Proyecto comunitario inspirado en el ODS 11: Ciudades y Comunidades Sostenibles.</p>
+      </div>
+      <figure class="postal">
+        <img class="foto" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'><rect width='900' height='600' fill='%23dcfce7'/><circle cx='450' cy='250' r='130' fill='%2315803d' opacity='0.15'/><text x='450' y='275' font-size='120' text-anchor='middle'>👵👴🌳</text><text x='450' y='440' font-family='sans-serif' font-size='34' font-weight='bold' fill='%23166534' text-anchor='middle'>Paseos Seguros en el Barrio</text><text x='450' y='485' font-family='sans-serif' font-size='22' fill='%2315803d' text-anchor='middle'>Veredas amplias, bancas y cruces tranquilos</text></svg>" alt="Personas mayores paseando por un parque accesible con veredas amplias" width="900" height="600">
+        <figcaption>Caminar por el barrio con calma, seguridad y autonomía.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Sección Nosotros / Propuesta -->
+    <section id="nosotros" class="seccion fondo">
+      <div class="contenedor dos-columnas">
+        <img class="foto" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'><rect width='900' height='600' fill='%23e0f2fe'/><circle cx='450' cy='250' r='130' fill='%230369a1' opacity='0.15'/><text x='450' y='275' font-size='120' text-anchor='middle'>🪑🌿🦯</text><text x='450' y='440' font-family='sans-serif' font-size='34' font-weight='bold' fill='%230369a1' text-anchor='middle'>Corredores con Descanso</text><text x='450' y='485' font-family='sans-serif' font-size='22' fill='%230284c7' text-anchor='middle'>Sombra, apoyo y rutas sin escalones</text></svg>" alt="Banca de madera ergonómica en un corredor peatonal arbolado" width="900" height="600" loading="lazy">
+        <div>
+          <p class="etiqueta">Cuidado barrial y autonomía</p>
+          <h2>Que salir al parque o a la bodega vuelva a ser un gusto.</h2>
+          <p>Muchas personas mayores dejan de salir porque temen tropezar con baldosas sueltas, no encuentran dónde sentarse a mitad de camino o los semáforos cambian demasiado rápido.</p>
+          <h3>Nuestra solución</h3>
+          <p>Reunir en una plataforma sencilla y de letra clara los trayectos verificados del vecindario y permitir que los vecinos o familiares reporten puntos que necesitan rampas o reparación.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Sección de Galería -->
+    <!-- Sección de 3 Pasos -->
+    <section id="pasos" class="seccion contenedor">
+      <p class="etiqueta">Un recorrido pensado para ellos</p>
+      <h2>Del temor a salir al paseo seguro.</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="numero">01 / Consulta</span>
+          <h3>Elige el tipo de apoyo</h3>
+          <p>Revisa qué calles tienen veredas lisas, rampas suaves o bancas con sombra cada pocos metros.</p>
+          <a href="#orientador">Ir al orientador</a>
+        </article>
+        <article class="tarjeta">
+          <span class="numero">02 / Reconoce</span>
+          <h3>Ubica las mejoras</h3>
+          <p>Conoce cómo deben verse los cruces, pasamanos y semáforos adaptados para los abuelitos.</p>
+          <a href="#galeria">Ver galería</a>
+        </article>
+        <article class="tarjeta">
+          <span class="numero">03 / Participa</span>
+          <h3>Pide una adecuación</h3>
+          <p>Avísanos si en la cuadra de tus abuelos falta una rampa, una banca o hay una vereda peligrosa.</p>
+          <a href="#reportar">Hacer solicitud</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Orientador Interactivo (Puro CSS con radios) -->
+    <section id="orientador" class="seccion fondo">
+      <div class="contenedor">
+        <p class="etiqueta">Herramienta de orientación · Rutas amables</p>
+        <h2>¿Cómo camina hoy tu abuelito o abuelita?</h2>
+        <p>Selecciona una opción para ver las características de la ruta recomendada en el barrio.</p>
+
+        <fieldset class="orientador">
+          <legend>Selecciona el requerimiento de movilidad</legend>
+          
+          <input type="radio" name="movilidad" id="baston" checked>
+          <label for="baston">🦯 Camina con bastón</label>
+
+          <input type="radio" name="movilidad" id="andador">
+          <label for="andador">🛞 Usa andador o silla de ruedas</label>
+
+          <input type="radio" name="movilidad" id="descanso">
+          <label for="descanso">🪑 Necesita descansos frecuentes</label>
+
+          <div class="resultados">
+            <div class="respuesta baston">
+              <p class="etiqueta">Ruta Verde · Vereda Firme</p>
+              <h3>Corredor Av. Principal hacia la Parroquia y el Mercado</h3>
+              <p>Trayecto con baldosas antideslizantes sin grietas, alcorques de árboles cubiertos al ras del piso para evitar tropiezos con la punta del bastón y cruces con tiempo extendido.</p>
+            </div>
+            <div class="respuesta andador">
+              <p class="etiqueta">Ruta Azul · Cero Escalones</p>
+              <h3>Circuito Parque Central y Centro de Salud</h3>
+              <p>Veredas anchas de más de 1.80 m libres de postes, con rampas continuas de pendiente suave (máximo 6%) en todas las esquinas y pavimento liso sin desniveles.</p>
+            </div>
+            <div class="respuesta descanso">
+              <p class="etiqueta">Ruta Dorada · Paseo con Calma</p>
+              <h3>Alameda de los Abuelos y Zona Comercial</h3>
+              <p>Recorrido arbolado que cuenta con bancas ergonómicas con respaldar y apoyabrazos cada 80 metros, bebederos de agua e iluminación cálida antideslumbrante.</p>
+            </div>
+            <a class="boton-cta boton-oscuro" href="#reportar">Solicitar mejora en mi calle</a>
+          </div>
+        </fieldset>
+        <p class="nota">Demostración interactiva con CSS. Los datos mostrados representan ejemplos de rutas urbanas adaptadas.</p>
+      </div>
+    </section>
+
+    <!-- Sección de Galería (con imágenes vectoriales integradas que nunca fallan) -->
     <section id="galeria" class="seccion seccion-galeria">
       <div class="encabezado-seccion">
-        <h2>Galería de Intervenciones Urbanas</h2>
-        <p>Registro de adecuaciones, rampas, señalética táctil y corredores peatonales accesibles.</p>
+        <p class="etiqueta">Infraestructura amigable con la edad</p>
+        <h2>Galería de Intervenciones para el Adulto Mayor</h2>
+        <p>Soluciones urbanas que previenen caídas y devuelven la independencia a nuestros abuelos.</p>
       </div>
 
       <div class="galeria-rejilla">
         <!-- Tarjeta 1 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er1/400/300" alt="Rampa peatonal con pendiente reglamentaria en esquina comercial" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23fef3c7'/><text x='200' y='140' font-size='80' text-anchor='middle'>🪑</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%2392400e' text-anchor='middle'>Bancas Ergonómicas</text></svg>" alt="Bancas de descanso con apoyabrazos en parque" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Rampa Esquina Central</h3>
-            <p>Adecuación de gradiente al 8% con vados laterales accesibles.</p>
+            <h3>Bancas con Apoyabrazos</h3>
+            <p>Asientos a 45 cm de altura con brazos firmes que facilitan sentarse y levantarse sin esfuerzo en las rodillas.</p>
           </div>
         </article>
 
         <!-- Tarjeta 2 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er2/400/300" alt="Franja de pavimento podotáctil direccional en acera" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23dcfce7'/><text x='200' y='140' font-size='80' text-anchor='middle'>♿</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23166534' text-anchor='middle'>Rampa Suave (6%)</text></svg>" alt="Rampa peatonal de pendiente suave en esquina" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Pavimento Podotáctil</h3>
-            <p>Líneas de avance para personas con baja o nula visión.</p>
+            <h3>Rampas de Pendiente Suave</h3>
+            <p>Inclinación reducida y piso rugoso antideslizante para subir con andador o bastón sin resbalar.</p>
           </div>
         </article>
 
         <!-- Tarjeta 3 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er3/400/300" alt="Paso peatonal continuo a nivel de calzada con cruce seguro" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23e0f2fe'/><text x='200' y='140' font-size='80' text-anchor='middle'>🚦</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23075985' text-anchor='middle'>Tiempo Extendido</text></svg>" alt="Semáforo peatonal con temporizador grande y sonido" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Cruce a Nivel</h3>
-            <p>Elevación continua de acera priorizando el tránsito a pie.</p>
+            <h3>Semáforo de Paso Lento</h3>
+            <p>Cuenta regresiva con números gigantes y 15 segundos extra para cruzar la avenida sin apuros.</p>
           </div>
         </article>
 
         <!-- Tarjeta 4 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er4/400/300" alt="Semáforo acústico accesible con botón pulsador" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f3e8ff'/><text x='200' y='140' font-size='80' text-anchor='middle'>🦯</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%236b21a8' text-anchor='middle'>Doble Pasamanos</text></svg>" alt="Pasamanos continuo en desnivel de vereda" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Semáforo Acústico</h3>
-            <p>Emisores sonoros sincronizados para cruces con alto tráfico.</p>
+            <h3>Pasamanos de Apoyo</h3>
+            <p>Barras de sujeción ergonómicas en calles inclinadas o entradas a centros médicos y farmacias.</p>
           </div>
         </article>
 
         <!-- Tarjeta 5 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er5/400/300" alt="Vereda ensanchada libre de postes y obstáculos de cableado" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23dcfce7'/><text x='200' y='140' font-size='80' text-anchor='middle'>🌳</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23166534' text-anchor='middle'>Vereda Nivelada</text></svg>" alt="Rejilla nivelada en base de árbol sobre la vereda" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Acera Despejada</h3>
-            <p>Franja libre de obstáculos de mínimo 1.80 metros.</p>
+            <h3>Veredas sin Raíces ni Huecos</h3>
+            <p>Nivelación de losetas levantadas y rejillas al ras del suelo para evitar el riesgo de tropiezos.</p>
           </div>
         </article>
 
         <!-- Tarjeta 6 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er6/400/300" alt="Bancas de descanso ergonómicas con descansabrazos en parque" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23ffedd5'/><text x='200' y='140' font-size='80' text-anchor='middle'>🚶‍♀️</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%239a3412' text-anchor='middle'>Cruce Continuo</text></svg>" alt="Cruce peatonal elevado al mismo nivel de la vereda" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Banca Ergonómica</h3>
-            <p>Mobiliario accesible para personas mayores o movilidad reducida.</p>
+            <h3>Cruce a Nivel de Vereda</h3>
+            <p>El peatón cruza recto sin bajar a la pista, obligando a los autos a reducir la velocidad.</p>
           </div>
         </article>
 
         <!-- Tarjeta 7 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er7/400/300" alt="Alcorque cubierto con rejilla metálica enrasada con el suelo" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23e0f2fe'/><text x='200' y='140' font-size='80' text-anchor='middle'>🔍</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%23075985' text-anchor='middle'>Alto Contraste</text></svg>" alt="Letrero de orientación urbana con letras grandes" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Alcorque Nivelado</h3>
-            <p>Protección metálica que evita desniveles y tropiezos en la vereda.</p>
+            <h3>Señalética de Letra Grande</h3>
+            <p>Carteles de alto contraste fáciles de leer a distancia sin necesidad de forzar la vista.</p>
           </div>
         </article>
 
         <!-- Tarjeta 8 -->
         <article class="tarjeta-galeria">
           <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er8/400/300" alt="Señalética vial con texto de alto contraste y sistema Braille" loading="lazy">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23fef3c7'/><text x='200' y='140' font-size='80' text-anchor='middle'>🚌</text><text x='200' y='220' font-family='sans-serif' font-size='20' font-weight='bold' fill='%2392400e' text-anchor='middle'>Paradero Accesible</text></svg>" alt="Paradero de transporte público con asiento y acceso plano" loading="lazy">
           </div>
           <div class="info-tarjeta">
-            <h3>Señalética Braille</h3>
-            <p>Tótems de orientación con macrocaracteres y relieve.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 9 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er9/400/300" alt="Rampa de acceso público con doble pasamanos cilíndrico" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Pasamanos Continuo</h3>
-            <p>Doble altura de soporte a 70 cm y 90 cm del suelo.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 10 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er10/400/300" alt="Parada de transporte público con plataforma a piso bajo" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Paradero Integrado</h3>
-            <p>Embarque nivelado con el autobús para usuarios en silla de ruedas.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 11 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er11/400/300" alt="Zona de juegos infantiles con accesos inclusivos para todos" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Parque Infantil Accesible</h3>
-            <p>Pisos amortiguantes de caucho y juegos adaptados.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 12 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er12/400/300" alt="Plaza urbana con pavimento de textura táctil de advertencia" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Botones de Alerta</h3>
-            <p>Baldosas con domos para advertir cruces y cambios de nivel.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 13 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er13/400/300" alt="Iluminación peatonal baja orientada directamente a la banqueta" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Luz Focal Peatonal</h3>
-            <p>Luminarias que eliminan sombras peligrosas en los senderos.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 14 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er14/400/300" alt="Estacionamiento reservado para personas con movilidad reducida" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Cajón Preferencial</h3>
-            <p>Espacio vehicular de 3.80 m con franja segura de transferencia.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 15 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er15/400/300" alt="Corredor verde pacificado con coexistencia peatonal" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Calle Pacífica</h3>
-            <p>Zona residencial de velocidad máxima 20 km/h y preferencia peatonal.</p>
-          </div>
-        </article>
-
-        <!-- Tarjeta 16 -->
-        <article class="tarjeta-galeria">
-          <div class="contenedor-img">
-            <img src="https://picsum.photos/seed/er16/400/300" alt="Plano háptico táctil con relieve para orientación urbana" loading="lazy">
-          </div>
-          <div class="info-tarjeta">
-            <h3>Plano Háptico</h3>
-            <p>Maqueta táctil con relieve topográfico ubicada en estaciones centrales.</p>
+            <h3>Paradero Amigable</h3>
+            <p>Techo contra el sol, apoyo isquiático, asientos reservados e ingreso a nivel del bus.</p>
           </div>
         </article>
       </div>
     </section>
+
+    <!-- Testimonio -->
+    <section id="testimonios" class="seccion contenedor">
+      <blockquote class="cita-abuelo">
+        “Antes me daba miedo ir solo hasta la panadería por las veredas rotas. Ahora tengo mi ruta fija y una banca a mitad de cuadra donde saludo a mis vecinos”.
+      </blockquote>
+      <p class="nota">Relato de referencia inspirado en entrevistas a adultos mayores sobre movilidad barrial.</p>
+    </section>
+
+    <!-- Sección de Formulario / Reporte -->
+    <section id="reportar" class="seccion fondo">
+      <div class="contenedor dos-columnas">
+        <div>
+          <p class="etiqueta">Participación vecinal · Mejora tu cuadra</p>
+          <h2>¿Hay un obstáculo en el camino de tus abuelos?</h2>
+          <p>Cuéntanos qué esquina o vereda necesita atención. Con estos reportes priorizamos las brigadas comunitarias de accesibilidad.</p>
+          <p class="nota">Formulario demostrativo. No almacena datos personales reales.</p>
+        </div>
+
+        <form action="formulario.html" method="get" class="formulario">
+          <label for="nombre">Tu nombre o el del familiar</label>
+          <input id="nombre" type="text" required maxlength="60" placeholder="Ejemplo: Don Carlos / Nietos de Rosa" autocomplete="off">
+
+          <label for="correo">Correo o teléfono de contacto (ficticio)</label>
+          <input id="correo" type="email" required placeholder="familia@ejemplo.com" autocomplete="off">
+
+          <label for="necesidad">¿Qué mejora necesita la calle?</label>
+          <select id="necesidad" required>
+            <option value="">Selecciona una opción</option>
+            <option>Reparar vereda rota o desnivelada</option>
+            <option>Construir rampa suave en esquina</option>
+            <option>Instalar banca de descanso con sombra</option>
+            <option>Aumentar tiempo de semáforo peatonal</option>
+          </select>
+
+          <label for="detalle">Ubicación o referencia sencilla</label>
+          <textarea id="detalle" required minlength="8" maxlength="240" rows="3" placeholder="Ejemplo: Frente a la botica de la cuadra 4, el escalón es muy alto"></textarea>
+
+          <div class="check-linea">
+            <input id="acepto" type="checkbox" required>
+            <label for="acepto">Entiendo que este envío es una simulación educativa.</label>
+          </div>
+
+          <button type="submit" class="boton-cta boton-oscuro">Enviar solicitud de mejora</button>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- Pie de página corregido (mantiene la misma estructura original con íconos que no se rompen) -->
+  <!-- Pie de página -->
   <footer id="contacto" class="footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <span class="footer-logo" aria-hidden="true">♿</span>
-        <p class="brand-nombre">EcoRuta</p>
-        <small>© 2025 Todos los derechos reservados</small>
+        <span class="footer-logo" aria-hidden="true">👵🦯</span>
+        <p class="brand-nombre">EcoRuta Senior</p>
+        <small>© 2026 Ciudades amables con las personas mayores</small>
       </div>
 
       <div class="footer-links">
-        <h4>Legal</h4>
+        <h4>Información y Legal</h4>
+        <a href="recursos.html">Guía de Cuidado Peatonal</a>
         <a href="documentos/politica_aip.pdf">Política de Privacidad</a>
-        <a href="https://www.godaddy.com/resources/es/recursos/como-definir-los-terminos-y-condiciones-y-la-politica-de-privacidad-de-tu-tienda-online" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a>
-        <a href="documentos/LEY29733.pdf">Protección de Datos</a>
+        <a href="documentos/LEY29733.pdf">Protección de Datos (Ley 29733)</a>
       </div>
 
       <div class="footer-social">
-        <h4>Síguenos</h4>
+        <h4>Comunidad</h4>
         <div class="social-icons">
-          <!-- Facebook -->
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
               <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7v-3h3V9.5C10 6.57 11.76 5 14.42 5c1.27 0 2.6.23 2.6.23v2.85h-1.46c-1.45 0-1.9.9-1.9 1.83V12h3.2l-.51 3h-2.69v6.8c4.56-.93 8-4.96 8-9.8z"/>
             </svg>
           </a>
-          <!-- Instagram -->
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
               <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
             </svg>
           </a>
-          <!-- LinkedIn -->
-          <a href="#" aria-label="LinkedIn">
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
-            </svg>
-          </a>
-          <!-- Twitter / X -->
-          <a href="#" aria-label="Twitter">
-            <svg class="social-icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
